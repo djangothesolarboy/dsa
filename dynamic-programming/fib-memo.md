@@ -26,3 +26,7 @@ console.log(fib(7)); // 13
 console.log(fib(8)); // 21
 ```
 ![fib tree](rsrcs/fib-tree.svg)
+
+
+---  
+
