@@ -26,3 +26,46 @@ console.log(fib(7)); // 13
 console.log(fib(8)); // 21
 
 // -----------------------------------------------------------------------------
+
+// O(n)time/space
+const foo = (n) => {
+    if (n <= 1) return;
+    foo(n - 1);
+};
+
+// O(n)time/space
+const bar = (n) => {
+    if (n <= 1) return;
+    bar(n - 2);
+};
+
+
+// -----------------------------------------------------------------------------
+
+// O(2^n)time
+// O(n)space
+const dib = (n) => {
+    if (n <= 1) return;
+    dib(n - 1);
+    dib(n - 1);
+}
+
+// -----------------------------------------------------------------------------
+
+const lib = (n) => {
+    if (n <= 1) return;
+    lib(n - 2);
+    lib(n - 2);
+};
+
+// -----------------------------------------------------------------------------
+// memoization
+//  js object, keys will be arg to func, val will be return val
+const fibo = (n, memo = {}) => {
+    if (n in memo) return memo[n];
+    if (n <= 2) return 1;
+    memo[n] = fibo(n - 1, memo) + fibo(n - 2, memo);
+    return memo[n];
+};
+
+// -----------------------------------------------------------------------------

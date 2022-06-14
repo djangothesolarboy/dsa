@@ -29,4 +29,35 @@ console.log(fib(8)); // 21
 
 
 ---  
+![tree height](rsrcs/tree-height.png)
+> height*(n)* is just the distance from the root node;
+> from the root*(5)* node to the leaf*(1)* node is the height of the tree.
 
+---
+O(2^n)time
+![o(2^n)](rsrcs/n.png)
+> at each level we can assume that each node will have 2 children.
+> so each level of the tree will double the height.
+
+O(n)space
+![o(n)space](rsrcs/max-stack-depth.png)
+> the amount of stack frames we will use is the height of the tree.
+
+---
+O(2^n)time
+![o(2^n)](rsrcs/lib_tree-height.png)
+> from level to the next we double the amount of nodes;
+> based on our last problem we can see that our space would be O(n)
+
+---
+memoization
+```javascript
+ const fibo = (n, memo = {}) => {
+    if (n in memo) return memo[n];
+    if (n <= 2) return 1;
+    return fibo(n - 1) + fibo(n - 2);
+};
+```
+> memo will be *js object*
+	> *keys* will be an *arg* to the *function*
+	> *values* will be returned
