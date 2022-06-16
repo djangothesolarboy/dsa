@@ -15,3 +15,7 @@
 [dsa udemy python](https://github.com/VicodinAbuser/ZTM-DS-and-Algo-Python)
 
 [google interview js](https://www.youtube.com/watch?v=Rs7ARD5TCFU)
+
+
+[neetcode leetcode](https://github.com/neetcode-gh/leetcode)
+[neetcode](https://neetcode.io)
