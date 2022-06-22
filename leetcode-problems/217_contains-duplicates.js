@@ -13,10 +13,6 @@ var containsDuplicate = function (nums) {
     return false;
 };
 
-let nums1 = [1, 2, 3, 1];
-let nums2 = [1, 2, 3, 4];
-let nums3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
-
-console.log(containsDuplicate(nums1)); // true
-console.log(containsDuplicate(nums2)); // false
-console.log(containsDuplicate(nums3)); // true
+console.log(containsDuplicate([1, 2, 3, 1])); // true
+console.log(containsDuplicate([1, 2, 3, 4])); // false
+console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2])); // true
