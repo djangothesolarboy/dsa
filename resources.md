@@ -17,5 +17,5 @@
 [google interview js](https://www.youtube.com/watch?v=Rs7ARD5TCFU)
 
 
-[neetcode leetcode](https://github.com/neetcode-gh/leetcode)
+[neetcode repo](https://github.com/neetcode-gh/leetcode)
 [neetcode](https://neetcode.io)
