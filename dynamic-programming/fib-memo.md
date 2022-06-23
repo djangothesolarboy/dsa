@@ -34,17 +34,17 @@ console.log(fib(8)); // 21
 > from the root*(5)* node to the leaf*(1)* node is the height of the tree.
 
 ---
-O(2^n)time
+$$O(2^n)$$time
 ![o(2^n)](rsrcs/n.png)
 > at each level we can assume that each node will have 2 children.
 > so each level of the tree will double the height.
 
-O(n)space
+$$O(n)$$space
 ![o(n)space](rsrcs/max-stack-depth.png)
 > the amount of stack frames we will use is the height of the tree.
 
 ---
-O(2^n)time
+$$O(2^n)$$time
 ![o(2^n)](rsrcs/lib_tree-height.png)
 > from level to the next we double the amount of nodes;
 > based on our last problem we can see that our space would be O(n)
