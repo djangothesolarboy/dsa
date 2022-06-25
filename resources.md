@@ -12,6 +12,7 @@ big o
 - [big-o.io](https://big-o.io/)
 - [cheat sheet](https://www.bigocheatsheet.com)
 - [big-o-cheatsheet](imgs/big-o-cheatsheet.pdf)
+- [big o examples](https://developerinsider.co/big-o-notation-explained-with-examples/)
 
 ---
 coding problems
