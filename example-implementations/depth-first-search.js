@@ -22,7 +22,7 @@ class Graph {
 
         visited[v] = true;
 
-        for (let i = 0; i <adj[v].length; i++) {
+        for (let i = 0; i < adj[v].length; i++) {
             let w = adj[v][i];
             if (!visited[w]) this.dfs(goal, w, visited);
         }
@@ -31,4 +31,27 @@ class Graph {
     }
 }
 
-dfs(graph, 'A');
+const g = new Graph();
+// vertices
+g.addVertex("A");
+g.addVertex("B");
+g.addVertex("C");
+g.addVertex("D");
+g.addVertex("E");
+g.addVertex("F");
+g.addVertex("G");
+// edges
+g.addEdge("A", "B");
+g.addEdge("A", "C");
+g.addEdge("A", "D");
+g.addEdge("B", "C");
+g.addEdge("B", "D");
+g.addEdge("C", "D");
+g.addEdge("C", "E");
+g.addEdge("D", "F");
+g.addEdge("F", "G");
+
+// test example/s
+console.log(g.dfs("A")); // output: true
+console.log(g.dfs("G")); // output: true
+console.log(g.dfs("H")); // output: false

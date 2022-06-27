@@ -8,6 +8,7 @@
 [google interview js](https://www.youtube.com/watch?v=Rs7ARD5TCFU)
 
 - [graphs](https://jarednielsen.com/data-structure-graph-depth-first-search/)
+- [dynamic programming](https://jarednielsen.com/dynamic-programming-memoization-tabulation/)
 
 big o
 ---
