@@ -1,4 +1,17 @@
-/**/
+/*
+    breadth first search:
+*/
+let graph = { // adjacency list
+    'A': ['B', 'C'],
+    'B': ['D', 'E', 'F'],
+    'C': ['G'],
+    'D': [],
+    'E': [],
+    'F': ['H'],
+    'G': ['I'],
+    'H': [],
+    'I': []
+};
 
 const bfs = function(graph, node) {
     let visited = [];
@@ -10,7 +23,7 @@ const bfs = function(graph, node) {
 
     while (queue.length > 0) {
         let n = queue.shift();
-        console.log(n);
+        console.log(n, " ");
 
         for (let i = 1; i < graph[node].length; i++) {
             if (graph[node][i] && !visited[i]) {
@@ -19,16 +32,7 @@ const bfs = function(graph, node) {
             }
         }
     }
+    return visited;
 }
-graph = {
-    'A': ['B', 'C'],
-    'B': ['D', 'E', 'F'],
-    'C': ['G'],
-    'D': [],
-    'E': [],
-    'F': ['H'],
-    'G': ['I'],
-    'H': [],
-    'I': []
-};
-console.log(bfs(graph, 'A'))
+
+bfs(graph, 'A')
